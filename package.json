@@ -15,5 +15,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://batkozeus.github.io/Ameen-Merchant-App/build"
+  "homepage": "https://batkozeus.github.io/Ameen-Merchant-App/build",
+  "devDependencies": {
+    "babel-preset-stage-1": "^6.24.1"
+  }
 }
