@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import './ContactPage.css';
+import ContactItem from "components/ContactItem/ContactItem";
 
-class ContactPage extends Component {
+
+const ContactPage = (props) => {
+  const { classes } = props;
   
-  render() {
-    const { items, text } = this.props;
-    
-    return (
-				<div className="Header__user-info">
-					ContactPage
-				</div>
-    );
-  }
+  return <div className="ContactPage">
+      <h1 className="ContactPage__title">Contact us</h1>
+      <ContactItem/>
+    </div>;
 }
 
 export default ContactPage;
