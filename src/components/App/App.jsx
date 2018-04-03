@@ -7,6 +7,7 @@ import MainPage from 'components/MainPage/MainPage';
 import CalendarPage from 'components/CalendarPage/CalendarPage';
 import ContactPage from 'components/ContactPage/ContactPage';
 import PortfolioPage from 'components/PortfolioPage/PortfolioPage';
+import Footer from "components/Footer/Footer";
 
 
 const navLinks = [
@@ -42,6 +43,7 @@ class App extends Component {
 						<Redirect to="/" />
 					</Switch>
 				</AppBody>
+				<Footer/>
       </div>
     );
   }

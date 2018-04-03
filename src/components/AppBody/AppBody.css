@@ -1,0 +1,4 @@
+.AppBody {
+    min-height: calc(100vh - 156px);
+    padding: 64px 288px;
+}
