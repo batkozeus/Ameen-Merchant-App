@@ -20,7 +20,7 @@ const HeaderNav = ({ to, myKey, text }) => {
 HeaderNav.propTypes = {
 	to: propTypes.string.isRequired,
 	text: propTypes.string.isRequired,
-	myKey: propTypes.string.isRequired
+	myKey: propTypes.number.isRequired
 }
 
 export default HeaderNav;

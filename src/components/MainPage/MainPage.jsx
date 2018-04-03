@@ -1,39 +1,7 @@
 import React, { Component } from 'react';
 import './MainPage.css';
 import { withStyles } from "material-ui/styles";
-import ExpansionPanel, {
-  ExpansionPanelSummary,
-  ExpansionPanelDetails
-} from "material-ui/ExpansionPanel";
-import Typography from "material-ui/Typography";
-import ExpandMoreIcon from "material-ui-icons/ExpandMore";
-import Assignment from "material-ui-icons/Assignment";
-import LiveHelp from "material-ui-icons/LiveHelp";
-import AssistantPhoto from "material-ui-icons/AssistantPhoto";
-import Visibility from "material-ui-icons/Visibility";
-import pink from "material-ui/colors/pink";
-import green from "material-ui/colors/green";
-import Avatar from "material-ui/Avatar";
-
-const styles = {
-  avatar: {
-    margin: 10
-  },
-  pinkAvatar: {
-    margin: 10,
-    color: "#fff",
-    backgroundColor: pink[500]
-  },
-  greenAvatar: {
-    margin: 10,
-    color: "#fff",
-    backgroundColor: green[500]
-  },
-  row: {
-    display: "flex",
-    justifyContent: "center"
-  }
-};
+import MyExpansionPanel from "components/MyExpansionPanel/MyExpansionPanel";
 
 class MainPage extends Component {
   
@@ -42,26 +10,38 @@ class MainPage extends Component {
     
     return <div className="MainPage">
         <h1 className="MainPage__title">Ameen Merchant App</h1>
-        <ExpansionPanel>
-          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.row}>
-              <Avatar>
-                <Assignment />
-              </Avatar>
-              Expansion Panel 1
-            </Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
-            </Typography>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+        <MyExpansionPanel panelTheme="setup">
+          <p className="PanelElement">
+            <b>Step 1:</b> git clone this repo
+          </p>
+          <p className="PanelElement">
+            <b>Step 2:</b> cd to the cloned repo
+          </p>
+          <p className="PanelElement">
+            <b>Step 3:</b> Install the Application with <code className="PanelElement--code">
+              yarn
+            </code> or <code className="PanelElement--code">npm i</code>
+          </p>
+        </MyExpansionPanel>
+        <MyExpansionPanel panelTheme="run" />
+        <MyExpansionPanel panelTheme="compliant" />
+        <MyExpansionPanel panelTheme="secrets">
+          <p className="PanelElement">
+            <a>This project</a> uses react-native-config to expose config variables to your javascript code in React Native. You can store Api keys and other sensitive information in a <code className="PanelElement--code">
+              .env{" "}
+            </code> file
+          </p>
+          <div className="PanelCode">
+            <code className="PanelElement--code">
+              API_URL=https://myapi.com
+            </code> <br />
+            <code className="PanelElement--code">
+              GOOGLE_MAPS_API_KEY=abcdefgh
+            </code>
+          </div>
+        </MyExpansionPanel>
       </div>;
   }
 }
 
-// export default MainPage;
-export default withStyles(styles)(MainPage);
+export default MainPage;

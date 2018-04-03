@@ -6,7 +6,8 @@ import App from 'components/App/App';
 
 
 ReactDOM.render(
-    <BrowserRouter basename="/ReactVisitCard/build">
-        <App />
-    </BrowserRouter>, 
-    document.getElementById('root'));
+  <BrowserRouter basename="/Ameen-Merchant-App/build">
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);

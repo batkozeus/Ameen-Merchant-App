@@ -10,7 +10,7 @@ class Header extends Component {
     return (
 			<header className="Header">
 				<div className="Header__user-info">
-					<div className="Header__avatar"><p>JS</p></div>
+					<div className="Header__avatar">JS</div>
 					<h1 className="Header__logo">
 						{text}
 					</h1>
