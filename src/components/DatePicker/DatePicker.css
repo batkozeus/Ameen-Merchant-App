@@ -1,0 +1,25 @@
+.DateForm {
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    justify-content: center;
+    align-items: flex-start;
+    width: 160px;
+    height: 36px;
+    padding: 16px;
+    background: #F1F2F3;
+    color: #B2B5BA;
+    text-transform: uppercase;
+}
+
+.DateInput {
+    width: 100%;
+    padding-top: 4px;
+    background: inherit;
+    border: none;
+    font-size: 20px;
+}
+
+.DateInput:focus {
+    outline:none;
+}
