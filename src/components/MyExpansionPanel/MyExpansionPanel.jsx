@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import propTypes from "prop-types";
 import "./MyExpansionPanel.css";
 import { withStyles } from "material-ui/styles";
 import ExpansionPanel, {
@@ -114,5 +115,8 @@ class MyExpansionPanel extends Component {
   }
 }
 
-// export default MainPage;
+MyExpansionPanel.propTypes = {
+  panelTheme: propTypes.string.isRequired
+};
+
 export default withStyles(styles)(MyExpansionPanel);

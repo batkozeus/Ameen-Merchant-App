@@ -1,0 +1,11 @@
+.CalendarPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 64px 288px;
+}
+
+.CalendarPage__title {
+    padding: 0 16px;
+}

@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import './MainPage.css';
-import { withStyles } from "material-ui/styles";
 import MyExpansionPanel from "components/MyExpansionPanel/MyExpansionPanel";
 
 class MainPage extends Component {
   
-  render() {
-    const { classes } = this.props;
-    
+  render() { 
     return <div className="MainPage">
         <h1 className="MainPage__title">Ameen Merchant App</h1>
         <MyExpansionPanel panelTheme="setup">

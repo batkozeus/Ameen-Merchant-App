@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "./ContactItem.css";
 import { withStyles } from "material-ui/styles";
 import AppBar from "material-ui/AppBar";
@@ -8,12 +8,12 @@ import Button from "material-ui/Button";
 import IconButton from "material-ui/IconButton";
 import MailOutline from "material-ui-icons/MailOutline";
 import blue from "material-ui/colors/blue";
-import twitterLogo from "./assets/twitter.svg";
-import facebookLogo from "./assets/facebook.svg";
+
 
 const styles = {
   root: {
-    flexGrow: 1
+    flexGrow: 1,
+    padding: 4
   },
   flex: {
     flex: 1,
@@ -25,6 +25,17 @@ const styles = {
   },
   app: {
     backgroundColor: "#fff"
+  },
+  mailButton: {
+    color: "white",
+    backgroundColor: blue[700],
+    borderRadius: 7,
+    textTransform: "none",
+    paddingTop: 8,
+    paddingRight: 24,
+    paddingBottom: 8,
+    paddingLeft: 18,
+    fontSize: 16
   },
   menuButton: {
     color: "white",
@@ -40,26 +51,46 @@ const styles = {
 };
 
 const ContactItem = props => {
-  const { classes } = props;
+  const { classes, children, linkName, linkAdress } = props;
 
-  return <div className={classes.root}>
+  if (linkName === 'Email') {
+    return <div className={classes.root}>
+        <AppBar className={classes.app} position="static">
+          <Toolbar>
+            <IconButton className={classes.iconButton} color="inherit" aria-label="Menu">
+              <MailOutline className="logo mailLogo" />
+            </IconButton>
+            <Typography variant="title" color="inherit" className={classes.flex}>
+              {linkName}
+            </Typography>
+            <Button className={classes.mailButton}>
+              <a href={linkAdress} className="myRef">
+                Contact us >
+              </a>
+            </Button>
+          </Toolbar>
+        </AppBar>
+      </div>;
+  } 
+  else {
+    return <div className={classes.root}>
       <AppBar className={classes.app} position="static">
         <Toolbar>
           <IconButton className={classes.iconButton} color="inherit" aria-label="Menu">
-            {/* <MailOutline /> */}
-            <img className="twitterLogo" src={twitterLogo} alt="twitterLogo" />
+            {children}
           </IconButton>
           <Typography variant="title" color="inherit" className={classes.flex}>
-            Twitter
+            {linkName}
           </Typography>
           <Button className={classes.menuButton}>
-            <a href="https://twitter.com/?lang=ru" className="myRef">
+            <a href={linkAdress} className="myRef">
               Visit page >
             </a>
           </Button>
         </Toolbar>
       </AppBar>
     </div>;
+  }
 };
 
 export default withStyles(styles)(ContactItem);

@@ -9,3 +9,30 @@
 .ContactPage__title {
     padding: 0 16px;
 }
+
+.logo {
+    border-radius: 100%;
+    width: 28px;
+    padding: 7px;
+    font-size: 16px;
+}
+
+.twitterLogo {
+    background-color: deepskyblue;
+}
+
+.mailLogo {
+    background-color: crimson;
+}
+
+.facebookLogo {
+    background-color: mediumblue;
+}
+
+.linkedinLogo {
+    background-color: darkblue;
+}
+
+.githubLogo {
+    background-color: black;
+}

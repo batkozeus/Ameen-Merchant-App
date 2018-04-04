@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
 import './CalendarPage.css';
+import {
+  DateRangePicker,
+  SingleDatePicker,
+  DayPickerRangeController
+} from "react-dates";
+import "react-dates/lib/css/_datepicker.css";
 
 class CalendarPage extends Component {
   
   render() {
-    const { items, text } = this.props;
+    // const { items, text } = this.props;
     
     return (
-				<div className="Header__user-info">
-					CalendarPage
-				</div>
-    );
+			<div className="CalendarPage">
+        <h1 className="CalendarPage__title">Calendar</h1>
+      </div>
+    )
   }
 }
 

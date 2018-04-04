@@ -4,7 +4,7 @@ import './PortfolioPage.css';
 class MainPage extends Component {
   
   render() {
-    const { items, text } = this.props;
+    // const { items, text } = this.props;
     
     return (
 				<div className="Header__user-info">

@@ -29,9 +29,7 @@ const listFooterItems = {
 };
 
 class Footer extends Component {
-  render() {
-    const { items, text } = this.props;
-    
+  render() {   
     return <footer className="Footer">
         <div className="Footer__trademark">&copy; 2018 IgorProperty</div>
         <ul className="Footer__info-list">
@@ -49,6 +47,5 @@ class Footer extends Component {
       </footer>;
   }
 }
-
 
 export default Footer;

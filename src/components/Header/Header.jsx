@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import propTypes from "prop-types";
 import 'components/Header/Header.css';
 import HeaderNav from 'components/HeaderNav/HeaderNav';
 
@@ -25,5 +26,10 @@ class Header extends Component {
     );
   }
 }
+
+Header.propTypes = {
+  items: propTypes.array.isRequired,
+  text: propTypes.string.isRequired
+};
 
 export default Header;
