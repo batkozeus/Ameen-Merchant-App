@@ -1,3 +1,11 @@
+.DateCollection {
+    display: flex;
+}
+
+.DateCollection:hover {
+    cursor: pointer;
+}
+
 .DateForm {
     display: flex;
     flex-direction: column;
@@ -10,6 +18,27 @@
     background: #F1F2F3;
     color: #B2B5BA;
     text-transform: uppercase;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.DateForm--white {
+    position: relative;
+    background: #fff;
+}
+
+.DateForm--white:before {
+    left: 0%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(144, 146, 150, 0);
+    border-left-color: #909296;
+    border-width: 12px;
+    margin-top: -12px;
 }
 
 .DateInput {
@@ -17,9 +46,38 @@
     padding-top: 4px;
     background: inherit;
     border: none;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .DateInput:focus {
     outline:none;
+}
+
+.DateInput:hover {
+    cursor: pointer;
+}
+
+.DateResultForm {
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    justify-content: center;
+    align-items: flex-start;
+    width: 56px;
+    height: 36px;
+    margin-left: 12px;
+    padding: 16px;
+    background: #F1F2F3;
+    color: #B2B5BA;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.DateResultInfo {
+    width: 100%;
+    padding-top: 4px;
+    background: inherit;
+    border: none;
+    font-size: 24px;
+    color: black;
 }

@@ -10,7 +10,7 @@ class CalendarPage extends Component {
     
     return <div className="CalendarPage">
         <h1 className="CalendarPage__title">Calendar</h1>
-        <div className="dateCalc">
+        <div className="CalendarPage__DateCalc">
           {/* <input type="date" className="dateStart" /> */}
           <DatePicker />
         </div>
