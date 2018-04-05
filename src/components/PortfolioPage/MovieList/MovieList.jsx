@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './MovieList.css';
+import './MovieList.scss';
 import MovieCard from '../MovieCard/MovieCard';
 
 class MovieList extends React.Component {
@@ -26,7 +26,3 @@ class MovieList extends React.Component {
 }
 
 export default MovieList;
-
-// <MovieCard title={movies[0].title} text={movies[0].text} rating={movies[0].rating}/>
-
-// {movies.map((movies) => <MovieCard key={movies.id} onClick={() => {onToDoClick(movies.id);}} {...movies}/>)}

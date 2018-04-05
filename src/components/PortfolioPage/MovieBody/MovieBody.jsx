@@ -1,5 +1,5 @@
 import React from 'react';
-import "./MovieBody.css";
+import "./MovieBody.scss";
 
 
 class MovieBody extends React.Component {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './AppBody.css';
+import './AppBody.scss';
 
 const AppBody = (props) => {
   return (

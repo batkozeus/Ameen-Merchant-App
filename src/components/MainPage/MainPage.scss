@@ -4,21 +4,23 @@
     justify-content: center;
     align-items: stretch;
     margin: 64px 288px;
-}
 
-.MainPage__title {
+    &__title {
     padding: 0 16px;
     font-size: 42px;
 }
+}
+
+
 
 .PanelElement {
     margin: 0 48px 16px;
     font-size: 16px;
     line-height: 2em;
-}
-
-.PanelElement--code {
-    background: #F6F8FA;
+        
+    &--code {
+        background: #F6F8FA;
+    }
 }
 
 .PanelCode {

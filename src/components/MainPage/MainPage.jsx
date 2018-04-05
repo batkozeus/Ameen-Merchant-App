@@ -1,5 +1,5 @@
 import React from 'react';
-import './MainPage.css';
+import './MainPage.scss';
 import MyExpansionPanel from "components/MyExpansionPanel/MyExpansionPanel";
 
 const MainPage = () => {
@@ -7,7 +7,9 @@ const MainPage = () => {
       <h1 className="MainPage__title">Ameen Merchant App</h1>
       <MyExpansionPanel panelTheme="setup">
         <p className="PanelElement">
-          <b>Step 1:</b> git clone this repo
+          <b>Step 1:</b> git clone this repo <code className="PanelElement--code">
+            https://github.com/batkozeus/Ameen-Merchant-App.git
+          </code>
         </p>
         <p className="PanelElement">
           <b>Step 2:</b> cd to the cloned repo
@@ -18,8 +20,24 @@ const MainPage = () => {
           </code> or <code className="PanelElement--code">npm i</code>
         </p>
       </MyExpansionPanel>
-      <MyExpansionPanel panelTheme="run" />
-      <MyExpansionPanel panelTheme="compliant" />
+      <MyExpansionPanel panelTheme="run">
+        <p className="PanelElement">
+          To open this App just follow this link: <code className="PanelElement--code">
+            https://batkozeus.github.io/Ameen-Merchant-App/build/
+          </code>
+        </p>
+      </MyExpansionPanel>
+      <MyExpansionPanel panelTheme="compliant">
+        <p className="PanelElement">
+          <ul>
+            <li>React, React Router</li>
+            <li>ES6, SASS (SCSS), Flexbox</li>
+            <li>Webpack</li>
+            <li>Material Design</li>
+            <li>Moment Js</li>
+          </ul>
+        </p>
+      </MyExpansionPanel>
       <MyExpansionPanel panelTheme="secrets">
         <p className="PanelElement">
           <a>This project</a> uses react-native-config to expose config variables to your javascript code in React Native. You can store Api keys and other sensitive information in a <code className="PanelElement--code">

@@ -1,5 +1,5 @@
 import React from 'react';
-import './CalendarPage.css';
+import './CalendarPage.scss';
 import DatePicker from 'components/DatePicker/DatePicker';
 
 

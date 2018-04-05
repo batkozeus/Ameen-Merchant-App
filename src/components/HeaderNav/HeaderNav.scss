@@ -1,12 +1,11 @@
 .Navigation__link {
-	/* position: relative;
-	display: block; */
 	text-decoration: none;
 	color: #fff;
 	font-size: 22px;
 	padding: 8px 16px;
+	
+	&--active {
+		color: #6D7EAC;
+	}
 }
 
-.Navigation__link--active {
-	color: #6D7EAC;
-}

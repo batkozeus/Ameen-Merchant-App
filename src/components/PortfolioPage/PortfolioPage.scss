@@ -3,10 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    margin: 64px 288px;
-}
+    margin: 64px 288px; 
 
-.PortfolioPage__title {
-    padding: 0 16px;
-    font-size: 42px;
+    &__title {
+        padding: 0 16px;
+        font-size: 42px;
+    }
+
 }

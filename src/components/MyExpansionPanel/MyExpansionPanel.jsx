@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import propTypes from "prop-types";
-import "./MyExpansionPanel.css";
+import "./MyExpansionPanel.scss";
 import { withStyles } from "material-ui/styles";
 import ExpansionPanel, {
   ExpansionPanelSummary,

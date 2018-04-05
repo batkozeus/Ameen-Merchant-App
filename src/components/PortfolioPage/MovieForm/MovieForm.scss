@@ -1,0 +1,67 @@
+.MovieForm {
+	padding: 16px;
+	flex: 0 0 35%;
+	border-radius: 2px;
+	box-shadow: 0 0 2px 2px rgba(33,33,33,.5);
+	text-align: center;
+
+	&__label-for-form {
+		display: block;
+		margin-bottom: 20px;
+		color: #424242;
+		text-align: left;
+	}
+
+	&__input,
+	&__txtarea {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		margin-top: 4px;
+		padding: 4px;
+		font-size: 20px;
+		color: #424242;
+		font-family: Roboto, sans-serif;
+	}
+
+	&__txtarea {
+		resize: none;
+	}
+
+	&__submit {
+		outline: 0;
+		border: 0;
+		padding: 10px 20px;
+		border-radius: 2px;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 16px;
+		background-color: #3f51b5;
+		cursor: pointer;
+		box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .3);
+		transition: all .2s linear;
+	}
+
+	&__submit:hover {
+		background-color: #ff5722;
+		box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .3);
+	}
+
+	&__input:focus,
+	&__txtarea:focus {
+		outline-color: #303f9f;
+	}
+
+	&__fieldset {
+		margin-bottom: 20px;
+		color: #424242;
+	}
+
+	&__label-for-checkbox {
+		display: inline-block;
+		width: 20%;
+		min-width: 80px;
+		margin: 2% 5%;
+	}
+
+}

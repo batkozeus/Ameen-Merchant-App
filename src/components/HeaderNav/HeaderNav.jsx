@@ -1,7 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import './HeaderNav.css';
+import './HeaderNav.scss';
 
 
 const HeaderNav = ({ to, myKey, text }) => {

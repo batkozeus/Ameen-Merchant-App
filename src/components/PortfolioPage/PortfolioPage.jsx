@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './PortfolioPage.css';
+import './PortfolioPage.scss';
 import v4 from "uuid";
 import MovieBody from "./MovieBody/MovieBody";
 import MovieList from "./MovieList/MovieList";

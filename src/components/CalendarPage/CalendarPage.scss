@@ -4,13 +4,13 @@
     justify-content: center;
     align-items: stretch;
     margin: 64px 288px;
-}
 
-.CalendarPage__title {
-    padding: 0 16px;
-    font-size: 42px;
-}
+    &__title {
+        padding: 0 16px;
+        font-size: 42px;
+    }
 
-.CalendarPage__DateCalc {
-    padding: 0 16px;
+    &__DateCalc {
+        padding: 0 16px;
+    }
 }

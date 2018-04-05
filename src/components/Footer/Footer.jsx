@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Footer.css';
+import './Footer.scss';
 
 const listFooterItems = {
   "001": {

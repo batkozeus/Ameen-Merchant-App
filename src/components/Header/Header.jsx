@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import propTypes from "prop-types";
-import 'components/Header/Header.css';
+import 'components/Header/Header.scss';
 import HeaderNav from 'components/HeaderNav/HeaderNav';
 
 class Header extends Component {
