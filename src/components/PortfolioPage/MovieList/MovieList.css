@@ -1,0 +1,7 @@
+.MovieList {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 0 0 62%;
+	padding: 0;
+	margin: 0;
+}

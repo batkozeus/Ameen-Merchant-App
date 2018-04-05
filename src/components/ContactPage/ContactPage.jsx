@@ -7,7 +7,6 @@ import linkedinLogo from "./assets/linkedin.svg";
 import githubLogo from "./assets/github-circle.svg";
 
 const ContactPage = (props) => {
-  
   return <div className="ContactPage">
       <h1 className="ContactPage__title">Contact us</h1>
       <ContactItem linkName="Twitter" linkAdress="https://twitter.com/?lang=ru">
